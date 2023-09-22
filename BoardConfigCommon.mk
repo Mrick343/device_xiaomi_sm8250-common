@@ -89,6 +89,9 @@ TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/config.fs
 # Firmware
 -include vendor/xiaomi/munch-firmware/BoardConfigVendor.mk
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Kernel
 ifeq ($(PRODUCT_VIRTUAL_AB_OTA),true)
 BOARD_BOOT_HEADER_VERSION := 3
