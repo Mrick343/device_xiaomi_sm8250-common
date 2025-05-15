@@ -138,6 +138,11 @@ PRODUCT_COPY_FILES += \
 
 $(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
+# Boot animation
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_SCREEN_HEIGHT := 2400
+TARGET_SCREEN_WIDTH := 1080
+
 # Camera
 PRODUCT_PACKAGES += \
     android.hardware.camera.provider@2.4-impl \
