@@ -379,4 +379,6 @@
         <item>com.android.camera</item>
     </string-array>
 
+    <!-- Media Controls -->
+    <bool name="config_mediaControlsTurbulenceByDefault">false</bool>
 </resources>
