@@ -114,6 +114,9 @@ TARGET_KERNEL_SOURCE := kernel/xiaomi/sm8250
 KERNEL_CC := CC=clang
 override KERNEL_TOOLCHAIN_PREFIX_arm := arm-linux-android-
 
+# HWUI
+HWUI_COMPILE_FOR_PERF := true
+
 # Partitions
 BOARD_FLASH_BLOCK_SIZE := 262144 # (BOARD_KERNEL_PAGESIZE * 64)
 ifeq ($(TARGET_IS_VAB),true)
