@@ -73,7 +73,7 @@ MALLOC_SVELTE_FOR_LIBC32 := true
 TARGET_CAMERA_SERVICE_EXT_LIB := //$(COMMON_PATH):libcameraservice_extension.xiaomi_sm8250
 
 # Camera
-$(call soong_config_set,camera,override_format_from_reserved,true)
+$(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
 # Display
 BOARD_USES_ADRENO := true

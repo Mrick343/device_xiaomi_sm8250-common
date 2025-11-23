@@ -67,7 +67,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/virtual_ab_ota/launch_with_ven
 PRODUCT_PACKAGES += \
     android.hardware.boot-service.qti \
     android.hardware.boot-service.qti.recovery
-
+    
 $(call soong_config_set,QTI_GPT_UTILS,USE_BSG_FRAMEWORK,false)
 
 AB_OTA_POSTINSTALL_CONFIG += \
@@ -136,7 +136,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml
 
-$(call soong_config_set,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
+$(call soong_config_set_bool,android_hardware_audio,skip_speaker_layout_channel_mask_field,true)
 
 # Boot animation
 TARGET_BOOT_ANIMATION_RES := 1080
@@ -314,7 +314,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/media/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml
 
-$(call soong_config_set,stagefright,target_disable_thumbnail_block_model,true)
+$(call soong_config_set_bool,stagefright,target_disable_thumbnail_block_model,true)
 
 # NFC
 PRODUCT_PACKAGES += \
