@@ -87,3 +87,7 @@ ro.vendor.qti.sys.fw.bservice_limit=60
 
 # Increase max cached processes
 activity_manager.max_cached_processes=64
+
+# Axion Scroll optimizer
+persist.sys.perf.scroll_opt=true
+persist.sys.perf.scroll_opt.heavy_app=1
