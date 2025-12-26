@@ -69,9 +69,6 @@ TARGET_NO_BOOTLOADER := true
 # Camera Malloc
 MALLOC_SVELTE_FOR_LIBC32 := true
 
-# Camera - Torch
-TARGET_CAMERA_SERVICE_EXT_LIB := //$(COMMON_PATH):libcameraservice_extension.xiaomi_sm8250
-
 # Camera
 $(call soong_config_set_bool,camera,override_format_from_reserved,true)
 
